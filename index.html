@@ -4,8 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BUS-TICKET</title>
+<!-- daisy ui & tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="styles/ticket.css">
 </head>
-<body>
-    
+<body class="font-roboto bg-slate-100">
+  <header class="header">
+  <nav class="navbar font-roboto flex justify-between">
+     <h1 class="ticket font-bold text-black">P-Ticket</h1>   
+     <ul class="nav-items gap-8 text-gray-900">
+     <li>Home</li>
+     <li>About</li>
+     <li>Destination</li>
+     <li>Search</li>   
+    </ul>
+    <div class="bus-img gap-2">
+        <span class="bus text-green-500">BUS</span>
+        <img src="images/bus-icon.png" alt="">
+    </div>
+  </nav>
+  </header>
+  <main>
+    <!-- banner section -->
+<section class="banner-section justify-center collapse ">
+
+  <div class="card w-96 glass justify-center items-center">
+  <img src="/images/banner.png" alt="bus!"/>
+    <h1 class="card-title text-black">End-To-End Travel With
+    <span class="par text-green-500">P Paribahan </span></h1>
+    <p class="bus-ticket text-zinc-700">How to booking your bus ticket?</p>
+    <div class="card-actions justify-center">
+      <button class="btn bg-green-500 text-slate-950">buy tickets</button>
+  </div>
+</div>
+</section>
+</main>
+  <footer></footer>
 </body>
 </html>
