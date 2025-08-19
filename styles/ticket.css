@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 .font-roboto {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
@@ -8,7 +9,11 @@
   font-style: normal; 
   
 }
-
+#success{
+  color:darkgreen;
+  text-align: center;
+  font-size: x-large;
+}
 .banner{
   background-image: url(../images/banner.png);
   background-repeat: no-repeat; 

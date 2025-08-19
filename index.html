@@ -83,8 +83,9 @@ border-hidden">Buy-Tickets</button>
  <nav class="ticket-t flex justify-between">
  <img src="images/bus-logo.png">
  <div><h2 class="parn text-gray-950 font-2xl text-2xl">Greenline Paribahan</h2>
- <spam class="coach text-gray-500 text-left"> Coach-009-WEB ! AC_Business</spam></div>  <button class="btn bg-slate-200 border-green-800 text-green-500 items-center justify-end
-"><img src="images/seat-green-filled.png" alt="">
+ <spam class="coach text-gray-500 text-left"> Coach-009-WEB ! AC_Business</spam></div>
+   <button class="btn bg-slate-200 border-green-800 text-green-500 items-center justify-end
+"><img src="images/seat-green.png" alt="">
 40 seats left</button>
 </nav>
  <div class="button-content text-center py-6 mx-6">
@@ -125,7 +126,7 @@ border-hidden">Buy-Tickets</button>
     <hr class="dotted-separator" >
 <div style="float: right; width: 50%; background-color: beige rounded-2xl m-6;">
   <nav class="items flex justify-evenly mt-2">
-    <ol>seat</ol>
+    <ol id="current-seats">seat 0</ol>
     <ol>class</ol>
     <ol>price</ol>
   </nav>
@@ -173,7 +174,7 @@ border-hidden">Buy-Tickets</button>
 </div>
  <input id="text" placeholder="Enter your email id" class="input input-bordered" />
 </div>
-<button class="btn btn-wide bg-green-600 text-black text-center mt-1 ml-44">Next</button>
+<button onclick="scrollToForm()" class="btn btn-wide bg-green-600 text-black text-center mt-1 ml-44">Next</button>
 <div class="condition flex justify-between mx-4 text-black">
 <p><a href="">Terms & Conditions</a></p>
 <p><a href=""> Cancellation Policy</a></p>
@@ -245,8 +246,8 @@ border-hidden">Buy-Tickets</button>
   </table>
   </div>
 </section>
- </section>
 </main>
+<!-- footer section -->
   <footer class="footer flex justify-between bg-black p-8 w-90">
     <aside>
       <h1 class="p-ticket font-bold text-white">P-Ticket</h1>
@@ -262,7 +263,17 @@ daily commuting better</span>
 
     </button>
   </nav>
+  <hr class="dotted-separator" >
   </footer>
+  <!-- form section -->
+  <section id="section2" class="success-book bg-slate-300 m-6 p-6  justify-center items-center gap-6 ">
+
+ <div> <img src="images/success.png" alt=""></div>
+    <h1 id="success">success</h1>
+  <p class="par text-black text-center">  Thank you for Booking Our Bus Seats. <br>
+We are working hard to find the best service and deals for you.<br> 
+Shortly you will find a confirmation in your email</p>
+</section>
  <script src="ticket.js"></script>
 </body>
 </html>
